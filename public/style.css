@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -rootle-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.root {
+  display: grid;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #282c34;
+  grid-template-rows: 5rem 1fr 3.5rem;
+}
+
+.root-header {
+  display: grid;
+  color: #ffffff;
+  text-align: left;
+  align-items: center;
+  padding: 0 50px 0 50px;
+  font-size: calc(10px + 1.5vmin);
+  grid-template-columns: 1fr auto;
+}
+
+.root-main {
+  display: grid;
+  place-items: center;
+  font-size: calc(10px + 1vmin);
+  grid-template-rows: 1fr 0.25fr;
+  color: #ffffff;
+}
+
+.root-main > p {
+  padding-bottom: 150px;
+}
+
+.root-footer {
+  color: #ffffff;
+  align-items: center;
+}
+
+.root-link {
+  color: #2ac5f8;
+}
+
+.root-logo-github {
+  width: 24px;
+  height: 24px;
+}
+
+.root-logo {
+  height: 25rem;
+  cursor: pointer;
+  user-select: none;
+  -ms-user-select: none;
+  margin-bottom: 2.5rem;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  transition: all 0.5s ease;
+}
+
+.root-logo:hover {
+  animation: wiggle 0.8s;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  10% {
+    transform: rotate(-1deg) scale(1.02);
+  }
+  20% {
+    transform: rotate(1deg) scale(1.04);
+  }
+  30% {
+    transform: rotate(0deg) scale(1.06);
+  }
+  40% {
+    transform: rotate(1deg) scale(1.08);
+  }
+  50% {
+    transform: rotate(-1deg) scale(1.1);
+  }
+  60% {
+    transform: rotate(0deg) scale(1.08);
+  }
+  70% {
+    transform: rotate(-1deg) scale(1.06);
+  }
+  80% {
+    transform: rotate(1deg) scale(1.04);
+  }
+  90% {
+    transform: rotate(0deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(-1deg) scale(1);
+  }
+}
